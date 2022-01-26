@@ -36,36 +36,36 @@ const objLat = (obj) => {
 //  fullName and tech if the applicant has more than one year of Experience
 
 // EX:
-//let cvs = [
-//     {
-//         firstName: "Jason",
-//         LastName: "James",
-//         yearsOfExperience: 20,
-//         tech: "JS"
-//     },
-//     {
-//         firstName: "Shira",
-//         LastName: null,
-//         yearsOfExperience: 5,
-//         tech: ".Net"
-//     },
-//     {
-//         firstName: "Dmitri",
-//         LastName: "Akkerman",
-//         yearsOfExperience: 1,
-//         tech: "Python"
-//     },
-//     {
-//         firstName: "Isabella",
-//         LastName: null,
-//         yearsOfExperience: 7,
-//         tech: "Java"
-//     }
-// ]
-//
+let arr = [
+    {
+        firstName: "Jason",
+        LastName: "James",
+        yearsOfExperience: 20,
+        tech: "JS"
+    },
+    {
+        firstName: "Shira",
+        LastName: null,
+        yearsOfExperience: 5,
+        tech: ".Net"
+    },
+    {
+        firstName: "Dmitri",
+        LastName: "Akkerman",
+        yearsOfExperience: 1,
+        tech: "Python"
+    },
+    {
+        firstName: "Isabella",
+        LastName: null,
+        yearsOfExperience: 7,
+        tech: "Java"
+    }
+]
+
 //   ===>
 
-//
+
 // [
 //     {
 //         fullName: "Jason James",
@@ -89,13 +89,14 @@ const objLat = (obj) => {
    
     
 const cvFormatter = (arr) => {
-    let newArr=[];
+    let Array=[];
     for(var x=0;x<arr.length;x++){
-    if(this.tech>1)
-    {newArr[x]=[this.firstName,this.lastName,this.tech];
-
+    if(arr.yearsOfExperience>1)
+        {let fn = `fullnam: ${arr.firstName} ${arr.lastName}`;
+        let tech=  `${arr.tech}`;
+        Array[x]= {`fullname: ${fn}
+                     Tech: ${tech} `}
     }
-
 }
 return newArr;    // write your code here
 };
