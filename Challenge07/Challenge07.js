@@ -36,36 +36,36 @@ const objLat = (obj) => {
 //  fullName and tech if the applicant has more than one year of Experience
 
 // EX:
-//let cvs = [
-//     {
-//         firstName: "Jason",
-//         LastName: "James",
-//         yearsOfExperience: 20,
-//         tech: "JS"
-//     },
-//     {
-//         firstName: "Shira",
-//         LastName: null,
-//         yearsOfExperience: 5,
-//         tech: ".Net"
-//     },
-//     {
-//         firstName: "Dmitri",
-//         LastName: "Akkerman",
-//         yearsOfExperience: 1,
-//         tech: "Python"
-//     },
-//     {
-//         firstName: "Isabella",
-//         LastName: null,
-//         yearsOfExperience: 7,
-//         tech: "Java"
-//     }
-// ]
-//
+let arr = [
+    {
+        firstName: "Jason",
+        LastName: "James",
+        yearsOfExperience: 20,
+        tech: "JS"
+    },
+    {
+        firstName: "Shira",
+        LastName: null,
+        yearsOfExperience: 5,
+        tech: ".Net"
+    },
+    {
+        firstName: "Dmitri",
+        LastName: "Akkerman",
+        yearsOfExperience: 1,
+        tech: "Python"
+    },
+    {
+        firstName: "Isabella",
+        LastName: null,
+        yearsOfExperience: 7,
+        tech: "Java"
+    }
+]
+
 //   ===>
 
-//
+
 // [
 //     {
 //         fullName: "Jason James",
@@ -89,15 +89,7 @@ const objLat = (obj) => {
    
     
 const cvFormatter = (arr) => {
-    let Array1=[];
-    for(let x of arr){
-    if(x.yearsOfExperience>1)
-    if (x.lastName!=null){
-        Array1.push({fullName:  `${x.firstName} ${x.lastName}`,
-                                tech: `${x.tech}`});
-    }else {
-        Array1.push({fullName: `${x.firstName}`,
-                                tech: `${x.tech}`});
+
     }
 }
 return Array1;    
