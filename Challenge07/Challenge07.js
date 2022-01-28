@@ -89,10 +89,18 @@ let arr = [
    
     
 const cvFormatter = (arr) => {
-
+    let Aray1=[];
+    for(let x of arr){
+    if(x.yearsOfExperience>1)
+    if (x.lastName!=null){
+        Aray1.push({fullName:  `${x.firstName} ${x.lastName}`,
+                                tech: `${x.tech}`});
+    }else {
+        Aray1.push({fullName: `${x.firstName}`,
+                                tech: `${x.tech}`});
     }
 }
-return Array1;    
+return Aray1;    
 };
 
 // 3) ---------------------
