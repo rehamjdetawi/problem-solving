@@ -89,16 +89,10 @@ let arr = [
    
     
 const cvFormatter = (arr) => {
-    let Array=[];
-    for(var x=0;x<arr.length;x++){
-    if(arr.yearsOfExperience>1)
-        {let fn = `fullnam: ${arr.firstName} ${arr.lastName}`;
-        let tech=  `${arr.tech}`;
-        Array[x]= {`fullname: ${fn}
-                     Tech: ${tech} `}
+
     }
 }
-return newArr;    // write your code here
+return Array1;    
 };
 
 // 3) ---------------------
