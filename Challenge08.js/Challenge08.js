@@ -28,7 +28,7 @@
 
 const customerAndAge = (obj) => {
 
-    }
+    
 
    return array1;
     
