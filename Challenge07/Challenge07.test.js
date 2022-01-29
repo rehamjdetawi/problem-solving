@@ -9,12 +9,6 @@ const first_Cv_Sample = [{
         tech: "JS"
     },
     {
-        firstName: "Aaron",
-        lastName: "William",
-        yearsOfExperience: 2,
-        tech: "JS"
-    },
-    {
         firstName: "Shira",
         lastName: null,
         yearsOfExperience: 5,
@@ -47,8 +41,8 @@ const second_Cv_Sample = [{
         tech: "Java"
     },
     {
-        firstName: null,
-        lastName: "Henry",
+        firstName: "Henry",
+        lastName: null,
         yearsOfExperience: 0,
         tech: "JS"
     },
@@ -202,10 +196,6 @@ describe('Challenge07', () => {
     test('CV-Formatter', () => {
         let received = [{
                 fullName: "Jason James",
-                tech: "JS"
-            },
-            {
-                fullName: "Aaron William",
                 tech: "JS"
             },
             {

@@ -27,22 +27,10 @@
 // -------------------------------------------------------------------------------------------------------
 
 const customerAndAge = (obj) => {
-    var arr=Object.keys(obj);
-    var arrobj=arr.map(function(key){
-     return {[key]: obj [key] } ;
-    });
-    
-    // let object = obj;
-    // let x="";
-    // for (let prop in object){
-    //     x+= "Customer Name :  "+ prop + object.prop;
+
     }
-//     let propertyNames = Object.entries(obj);
-//     let y = ""
-//     for (let x of propertyNames){
-//     y+=`Customer Name : ${x}`;
-// }
-   return x;
+
+   return array1;
     
 };
 
@@ -70,9 +58,13 @@ const customerAndAge = (obj) => {
 // -------------------------------------------------------------------------------------------------------
 
 const getEntries = (obj) => {
-    let propertyNames = [Object.keys(obj)];
-    let propertyNames1 = [Object.values(obj)];
-return propertyNames,propertyNames1;
+  let propertyNames =[];
+  for (let i in obj){
+  
+   propertyNames.push(`${i}: ${obj[i]}`);
+  
+  }
+return propertyNames;
 };
 
 // -------------------------------------------------------------------------------------------------------
@@ -113,11 +105,19 @@ const courses = [
 const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
-  for (let x in arr)
-  coursesName.push(arr[x]);
-  // write your code here
-
-  return { coursesName, studentsName };
+  for (let x of arr){
+      for (let i in x){
+          if (i=="course"){
+              coursesName.push(x[i]);
+          }
+          if (i=="Students"){
+              for (let y of x[i])
+              studentsName.push((x[i][y]));
+          }
+      }
+       
+  }
+  return {coursesName ,studentsName};
 };
 
 //  ------------------------------------------------------------------------------------------------------
