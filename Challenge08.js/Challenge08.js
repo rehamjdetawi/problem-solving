@@ -27,11 +27,7 @@
 // -------------------------------------------------------------------------------------------------------
 
 const customerAndAge = (obj) => {
-    let array1 = [];
-    array1.push(obj);
-    for (let x in array1) {
-      array1.push(`Customer Name :${x}`);
-      
+
     }
 
    return array1;
