@@ -9,9 +9,9 @@ const {
 describe("Challenge08-01", () => {
     test("Customer-and-average", () => {
         let names = {
-            "Romio Joliat": 35,
-            "Mario Ristrova": 39,
-            "Sofia firnando": 50,
+            RomioJoliat: 35,
+            MarioRistrova: 39,
+            Sofiafirnando: 50,
         };
         expect(customerAndAge(names)[0]).toStrictEqual(
             "Customer Name :Romio Joliat , Age :35"
